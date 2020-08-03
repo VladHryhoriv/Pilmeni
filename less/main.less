@@ -1,0 +1,104 @@
+#fonts() {
+	bold: 'Sans-Bold';
+	regular: 'Sans-Regular';
+	light: 'Sans-Light';
+	middle: 'Sans-SemiBold'
+}
+#colors() {
+	black: #000000;
+	dark-blue: #28387B;
+	cream: #FFFAF3;;
+	white: #ffffff;
+	blonde: #FFD69C;
+	rose: #F8D3CC;
+	green: #47A04B;;
+}
+a{
+	text-decoration: none;
+}
+h1,h2,h3,h4{
+	font-family: #fonts[bold];
+}
+.text{
+	&--large{
+		font-size: 22px;
+	}
+	&--normal{
+		font-size: 20px;
+		&-brown{
+			color: #colors[blonde];
+		}
+	}
+	&--classic{
+		font-size: 18px;
+	}
+	&--middle{
+		font-size: 16px;
+	}
+	&--standard{
+		font-size: 15px;
+	}
+	&--small{
+		font-size: 14px;
+		&-brown{
+			color: #colors[blonde];
+		}
+	}
+	&--very-small{
+		font-size: 12px;
+	}
+}
+.title{
+	&--large{
+		font-size: 32px;
+		font-family: #fonts[bold];
+	}
+	&--normal{
+		font-size: 24px;
+		font-family: #fonts[middle];
+	}
+}
+.classic-button{
+	&--white{
+		background-color: #colors[white];
+		color: #colors[dark-blue];
+		border-radius: 88px;
+		padding: 16px 40px;
+		&-bold{
+			font-family: #fonts[bold];
+		}	
+		&-regular{
+			font-family: #fonts[regular];
+		}
+	}
+	&--blue{
+		background-color: #colors[dark-blue];
+		color: #colors[white];
+		border-radius: 88px;
+		padding: 16px 40px;
+		&-bold{
+			font-family: #fonts[bold];
+		}
+		&-regular{
+			font-family: #fonts[regular];
+		}
+	}
+}
+body{
+	color: #colors[dark-blue];
+	font-family: #fonts[regular];
+	.wrapper-app{
+		max-width: 1440px;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #colors[cream];
+		.header{
+			&__wrapper{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+		}
+	}
+	
+}

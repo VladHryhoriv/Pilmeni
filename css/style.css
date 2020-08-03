@@ -1,0 +1,82 @@
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Sans-Bold';
+}
+.text--large {
+  font-size: 22px;
+}
+.text--normal {
+  font-size: 20px;
+}
+.text--normal-brown {
+  color: #FFD69C;
+}
+.text--classic {
+  font-size: 18px;
+}
+.text--middle {
+  font-size: 16px;
+}
+.text--standard {
+  font-size: 15px;
+}
+.text--small {
+  font-size: 14px;
+}
+.text--small-brown {
+  color: #FFD69C;
+}
+.text--very-small {
+  font-size: 12px;
+}
+.title--large {
+  font-size: 32px;
+  font-family: 'Sans-Bold';
+}
+.title--normal {
+  font-size: 24px;
+  font-family: 'Sans-SemiBold';
+}
+.classic-button--white {
+  background-color: #ffffff;
+  color: #28387B;
+  border-radius: 88px;
+  padding: 16px 40px;
+}
+.classic-button--white-bold {
+  font-family: 'Sans-Bold';
+}
+.classic-button--white-regular {
+  font-family: 'Sans-Regular';
+}
+.classic-button--blue {
+  background-color: #28387B;
+  color: #ffffff;
+  border-radius: 88px;
+  padding: 16px 40px;
+}
+.classic-button--blue-bold {
+  font-family: 'Sans-Bold';
+}
+.classic-button--blue-regular {
+  font-family: 'Sans-Regular';
+}
+body {
+  color: #28387B;
+  font-family: 'Sans-Regular';
+}
+body .wrapper-app {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFFAF3;
+}
+body .wrapper-app .header__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
