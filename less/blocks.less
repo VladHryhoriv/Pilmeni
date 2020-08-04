@@ -1,0 +1,115 @@
+.section{
+  padding: 50px 0;
+}
+body{
+	color: #colors[dark-blue];
+	font-family: #fonts[regular];
+	margin: 0;
+	.wrapper-app{
+		max-width: 1440px;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #colors[cream];
+		.header{
+			padding: 40px 0 50px 0;
+			&__contacts{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1140px;
+				margin: 0 auto;
+			}
+			&__menu{
+				max-width: 1140px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&__lang{
+				display: flex;
+				align-items: center;
+				margin-left: 140px;
+				.basket{
+					margin-right: 30px;
+				}
+				.PL{
+					margin-right: 15px;
+				}
+			}
+    }
+    .main{
+      &__slider{
+        .slick {
+          &-slide {
+            margin: 0 15px;
+          }
+          
+          &-list {
+            margin-left: 0;
+            margin-right: 0;
+          }
+          &-center{
+            .slide{
+              opacity: 1 !important;
+            }
+          }
+        }
+        .slide {
+          opacity: 0.5;
+          border-radius: 8px;
+          overflow: hidden;
+          &__text{
+            max-width: 500px;
+            background-color: #colors[dark-blue];
+            color: #colors[white];
+            display: block;
+            padding: 80px 30px 30px 30px;
+          }
+          &__img{
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      } 
+      &__section {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+       .section{
+        &--title {
+          max-width: 650px;
+          margin: 0 auto;
+        }
+        &__content{
+          flex-wrap: wrap;
+          justify-content: space-around;
+          .item{
+            flex-wrap: wrap;
+            background-color: #colors[white];
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 8px 16px rgba(174, 136, 123, 0.16);
+            &__name{
+              padding: 15px 0;
+              img{
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        &__more, .more{
+          max-width: 1140px;
+          margin: 0 auto;
+          padding: 30px 0;
+          background-color: #colors[white];
+          border-radius: 8px;
+          &__text{
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+    
+	}
+}
