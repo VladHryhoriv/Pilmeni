@@ -24,12 +24,18 @@ body{
 				margin: 0 auto;
 				display: flex;
 				justify-content: space-between;
-				align-items: center;
+        align-items: center;
+        .nav{
+          margin-right: 60px;
+        }
+        .last {
+          margin-right: 140px;
+        }
 			}
 			&__lang{
 				display: flex;
 				align-items: center;
-				margin-left: 140px;
+				// margin-left: 140px;
 				.basket{
 					margin-right: 30px;
 				}
@@ -108,8 +114,55 @@ body{
             margin: 0 20px;
           }
         }
+        &__store{
+          flex-wrap: wrap;
+        }
       }
     }
-    
+    .section4 {
+
+    }
 	}
+}
+.product {
+  background-color: #colors[white];
+  max-width: 220px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #colors[hex];
+  position: relative;
+  margin: 0 10px;
+  &__button{
+    width: 113px;
+    padding: 16px 20px;
+  }
+  .marks {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    .hit{
+      background-color: #colors[dark-blue];
+      color: #colors[white];
+    }
+    .vegan{
+      background-color: #colors[green];
+      color: #colors[white];
+    }
+    .deser{
+      background-color: #colors[blonde];
+      color: #colors[dark-blue];
+    } 
+    .dietetyczne{
+      background-color: #colors[rose];
+      color: #colors[dark-blue];
+    } 
+    .mark {
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-top: 10px;
+      padding: 8px 2px;
+      width: 80px;
+    }
+  }
 }
