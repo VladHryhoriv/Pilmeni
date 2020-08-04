@@ -14,6 +14,7 @@
 	green: #47A04B;
 	brown: #AE887B;
 	hex: #EADDD9;
+	light-grey: #F2F2F2;
 }
 a{
 	text-decoration: none;
@@ -123,6 +124,9 @@ button{
 	&--black{
 		color: #colors[black];
 	}
+	&--grey {
+		color: #colors[light-grey];
+	}
 }
 .d-n{
 	display: none;
@@ -136,8 +140,17 @@ button{
 .justify-center{
 	justify-content: center;
 }
+.justify-start{
+	justify-content: start;
+}
 .align-center {
-	align-items: center
+	align-items: center;
+}
+.not-active {
+	display: none !important;
+}
+.active {
+	display: block;
 }
 @import "blocks.less";
 @import "mixin.less";
