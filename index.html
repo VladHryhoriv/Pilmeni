@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name w-100 d-f justify-center align-center="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" content="initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
@@ -12,21 +12,58 @@
 	<div class="wrapper-app">
 		<header class="header">
 				<div class="header__contacts">
-					<div class="schedule">
+					<div class="schedule for-desktop">
 						<div class="schedule__text text--middle">Працюємо для вас</div>
 						<div class="time title--normal">od 10:00 do 20:00</div>
+					</div>
+					<div class="burger-menu for-mobile">
+						<span class="burger-menu__span"></span>
+						<span class="burger-menu__span"></span>
+						<span class="burger-menu__span"></span>
 					</div>
 					<div class="header__logo">
 						<img src="./img/logo.svg" alt="" srcset="">
 					</div>
-					<div class="phone">
+					<div class="header__lang for-mobile">
+						<img src="./img/basket.svg" class="basket" alt="" srcset="">
+						<img src="./img/PL-flag.svg" class="PL" alt="" srcset="">
+						<img src="./img/GB-flag.svg" class="GB" alt="" srcset="">
+					</div>
+					<div class="phone for-desktop">
 						<div class="phone__text text--middle">Zamów przez telefon</div>
 						<div class="phone__number time title--normal">+48 512 261 944</div>
 					</div>
 				</div>
 				
-				<div class="header__menu mt-8">
-						<span class="text--normal regular nav">Nasze menu <img src="./img/DownArrow.svg" alt="" srcset=""></span>
+				<div class="header__menu mt-8 for-desktop--flex">
+						<span class="our-menu text--normal regular nav menu__list">
+							Nasze menu <img src="./img/DownArrow.svg" alt="" srcset="">
+							<div id="myDropdown" class="dropdown-content">
+								<ul class="dropdown-content__ul">
+									<li class="dropdown-content__li mt-1">
+										<a
+											class="dropdown-content__a"
+											href="#"
+											>Pielmieni</a
+										>
+									</li>
+									<li class="dropdown-content__li mt-1">
+										<a
+											class="dropdown-content__a"
+											href="#"
+											>Wareniki Ukraińskie</a
+										>
+									</li>
+									<li class="dropdown-content__li mt-1">
+										<a
+											class="dropdown-content__a"
+											href="#"
+											>Kotlety mielone</a
+										>
+									</li>
+								</ul>
+							</div>
+						</span>
 						<span class="text--normal regular nav">Promocje</span>
 						<span class="text--normal regular nav">Dostawa i płatności</span>
 						<span class="text--normal regular nav">Blog</span>
@@ -42,10 +79,10 @@
 		<main class="main">
 			<div class="main__slider section section1">
 				<div class="slide-1 slide d-f">
-					<div class="slide__text w-100">
-						<div class="title--large d-f w-100 justify-between">
-							Zestaw na próbę
-							<span class="price color--blonde">99.00 zt</span>
+					<div class="slide__text">
+						<div class="slide__title title--large d-f w-100 justify-between">
+							<span>Zestaw na próbę</span>
+							<div class="price color--blonde">99.00 zt</div>
 						</div>
 						<div class="description light title--normal regular mt-2">
 							250 g x 10 rodzajów przepysznych pielmieni i wareników 
@@ -58,15 +95,15 @@
 							soczewica, twarog na słodko, szpinak z 
 							fetą, kaczka z żurawiną, wiśnia, jagody)
 						</div>
-						<button class="classic-button--white mt-9 bold text--classic">Do koszyka</button>
+						<button class="classic-button--white mt-9 bold text--classic slide__button">Do koszyka</button>
 					</div>
-					<img src="./img/download.jpeg" class="slide__img" alt="" srcset="">
+					<img src="./img/pi.jpg" class="slide__img" alt="" srcset="">
 				</div>
 				<div class="slide-2 slide d-f">
-					<div class="slide__text w-100">
-						<div class="title--large d-f w-100 justify-between">
-							Zestaw na próbę
-							<span class="price color--blonde">99.00 zt</span>
+					<div class="slide__text">
+						<div class="slide__title title--large d-f w-100 justify-between">
+							<span>Zestaw na próbę</span> 
+							<div class="price color--blonde">99.00 zt</div>
 						</div>
 						<div class="description light title--normal regular mt-2">
 							250 g x 10 rodzajów przepysznych pielmieni i wareników 
@@ -79,15 +116,15 @@
 							soczewica, twarog na słodko, szpinak z 
 							fetą, kaczka z żurawiną, wiśnia, jagody)
 						</div>
-						<button class="classic-button--white mt-9 bold text--classic">Do koszyka</button>
+						<button class="classic-button--white mt-9 bold text--classic slide__button">Do koszyka</button>
 					</div>
-					<img src="./img/download.jpeg" class="slide__img" alt="" srcset="">
+					<img src="./img/pi.jpg" class="slide__img" alt="" srcset="">
 				</div>
 				<div class="slide-3 slide d-f">
-					<div class="slide__text w-100">
-						<div class="title--large d-f w-100 justify-between">
-							Zestaw na próbę
-							<span class="price color--blonde">99.00 zt</span>
+					<div class="slide__text">
+						<div class="slide__title title--large d-f w-100 justify-between">
+							<span>Zestaw na próbę</span> 
+							<div class="price color--blonde">99.00 zt</div>
 						</div>
 						<div class="description light title--normal regular mt-2">
 							250 g x 10 rodzajów przepysznych pielmieni i wareników 
@@ -100,54 +137,54 @@
 							soczewica, twarog na słodko, szpinak z 
 							fetą, kaczka z żurawiną, wiśnia, jagody)
 						</div>
-						<button class="classic-button--white mt-9 bold text--classic">Do koszyka</button>
+						<button class="classic-button--white mt-9 bold text--classic slide__button">Do koszyka</button>
 					</div>
-					<img src="./img/download.jpeg" class="slide__img" alt="" srcset="">
+					<img src="./img/pi.jpg" class="slide__img" alt="" srcset="">
 				</div>
 			</div>
-			<div class="main__section section section2">
-				<div class="main__section--title w-100 text-center">
+			<div class="main__section-2 section">
+				<div class="main__section-2--title w-100 text-center">
 					<div class="title--large bold">Półprodukty mrożone z dostawą w Warszawie</div>
 					<div class="description text--normal regular color--brown mt-2">Od 2016 roku produkujemy i dostarczamy oryginalne półprodukty mrożone
 					kuchni wschodniej na terenie Warszawy i jej okolic</div>
 				</div>
-				<div class="section__content d-f w-100 mt-4">
+				<div class="section-2__content d-f w-100 mt-4">
 					<div class="item">
-						<img src="./img/item-1.svg" alt="">
+						<img class="item__img" src="./img/item-1.svg" alt="">
 						<div class="item__name w-100 d-f justify-center align-center">
 							<img src="./img/dumplings.svg" alt="" srcset="">
 							<span class="type title--normal middle">Pielmieni</span>
 						</div>
 					</div>
 					<div class="item">
-						<img src="./img/item-2.svg" alt="">
+						<img class="item__img" src="./img/item-2.svg" alt="">
 						<div class="item__name w-100 d-f justify-center align-center">
 							<img src="./img/Varenik.svg" alt="" srcset="">
 							<span class="item__type title--normal middle">Wareniki Ukraińskie</span>
 						</div>
 					</div>
 					<div class="item">
-						<img src="./img/item-3.svg" alt="">
+						<img class="item__img" src="./img/item-3.svg" alt="">
 						<div class="item__name w-100 d-f justify-center align-center">
 							<img src="./img/cutlets.svg" alt="" srcset="">
 							<span class="type title--normal middle">Kotlety mielone</span>
 						</div>
 					</div>
 				</div>
-				<div class="section__more w-100 d-f justify-center align-center color--brown mt-4">
+				<div class="section-2__more w-100 d-f justify-center align-center color--brown mt-4">
 					<img src="./img/arrow.svg" alt="" srcset="">
 					<div class="more__text text--normal middle">Wszystkie półprodukty</div>
 					<img src="./img/arrow.svg" alt="" srcset="">
 				</div>
 			</div>
-			<div class="main__section section section3">
+			<div class="main__section-3 section section-3">
 				<div class="main__section--title w-100 text-center">
 					<div class="title--large bold">Najczęściej zamawiane</div>
 					<div class="description text--normal regular color--brown mt-2">Tylko najlepsze wyroby stanowią się produkcją marki Pielmień!</div>
 				</div>
-				<div class="section__store d-f w-100 justify-between mt-4">
-					<div class="product w-100">
-						<div class="weight text--middle">500 g</div>
+				<div class="section-3__store d-f w-100 justify-between">
+					<div class="product w-100 mt-4">
+						<div class="product__weight">500 g</div>
 						<div class="marks text--very-small">
 							<div class="hit mark">HIT</div>
 							<div class="vegan mark">vegan</div> 
@@ -168,8 +205,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="product w-100">
-						<div class="weight text--middle">500 g</div>
+					<div class="product w-100 mt-4">
+						<div class="product__weight">500 g</div>
 						<div class="marks text--very-small">
 							<div class="hit mark">HIT</div>
 							<div class="vegan mark">vegan</div> 
@@ -190,8 +227,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="product w-100">
-						<div class="weight text--middle">500 g</div>
+					<div class="product w-100 mt-4">
+						<div class="product__weight">500 g</div>
 						<div class="marks text--very-small">
 							<div class="hit mark">HIT</div>
 							<div class="vegan mark">vegan</div> 
@@ -212,8 +249,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="product w-100">
-						<div class="weight text--middle">500 g</div>
+					<div class="product w-100 mt-4">
+						<div class="product__weight">500 g</div>
 						<div class="marks text--very-small">
 							<div class="hit mark">HIT</div>
 							<div class="vegan mark">vegan</div> 
@@ -236,34 +273,410 @@
 					</div>
 				</div>
 			</div>
-			<div class="main__section section section-4">
+			<div class="main__section-4 section-4 section">
 				<div class="section--title w-100 text-center">
-					<div class="title--large bold">Sprawdź co mówią nasi Klienci</div>
+					<div class="title--large bold">
+						Sprawdź co mówią nasi Klienci
+					</div>
 					<div class="description text--normal regular color--brown mt-2">TNajważniejszy jest dla nas zadowolony Klient,
 						dlatego każdego dnia dbamy o najlepszą jakość i smak naszych wyrobów. 
 					</div>
-					<div class="section-4__slider">
-						<div class="user__slider">
-							<div class="slide-1 slide d-f">
-								<div class="user d-f justify-start">
-									<img src="./img/ava.jpg" alt="" srcset="" class="user__ava">
-									<div class="user__response text-start">
-										<div class="user__name text--classic bold">John <span class="text--small color--grey">zrecenzował: Pielmeni</span> <img src="./img/rating.svg" alt="" srcset=""></div>
-										<p class="user__description">Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!</p>
-									</div>
+				</div>
+				<div class="users-slider for-desktop">
+					<div class="slide-1 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
 								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
 							</div>
-							<div class="slide-2 slide d-f">
-								
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
 							</div>
-							<div class="slide-3 slide d-f">
-								
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide-2 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide-3 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="users-slider for-mobile">
+					<div class="slide-1 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide-2 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide-3 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide-4 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide-5 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide-6 d-f slide">
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+						<div class="user d-f">
+							<img src="./img/ava.jpeg" alt="" srcset="" class="user__ava">
+							<div class="user__text">
+								<div class="user__name bold text--classic text-start">
+									John 
+									<span class="rise text--small color--light-grey">zrecenzował:</span> 
+									<span class="text--small middle">Pielmień</span>
+								</div>
+								<p class="user__description text--large text-start">
+									Znakomite, idealne pierożki! Delikatne ciasto, bogaty doprawiony farsz. Polecam wszystkim!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+			<div class="main__section-5 section">
+				<div class="section">
+					<div class="section--title w-100 text-center">
+						<div class="title--large bold">
+							Półprodukty mrożone tworzone z pasją
+						</div>
+						<div class="description text--normal regular color--brown mt-2">Tylko najlepsze pielmieni, wareniki ukraińskie i kotlety milone w Warszawie, bo są naszą pasją!
+						</div>
+					</div>
+					<div class="content d-f justify-center align-center mt-5">
+						<div class="content__text">
+							<img src="./img/group.svg" alt="" srcset="" class="section-5__img for-mobile w-100">
+							<p class="text--middle">
+								Produkujemy nasze pielmieni, wareniki ukraińskie i kotlety mielone zgodnie ze wszystkimi normami i standardami w specjalnie wyposażonej hali produkcyjnej przez profesjonalistów według unikatowych autorskich przepisów.
+							</p>
+							<p class="text--middle mt-5">
+								Nasze półprodukty mrożone przygotowane są z produktów naturalnych, bez dodatków chemicznych, zamienników czy polepszaczy smaku.
+							</p>
+							<button class="classic-button--blue mt-3 text--middle">Dowiedz się więcej...</button>
+						</div>
+						<img src="./img/group.svg" alt="" srcset="" class="section-5__img for-desktop">
+					</div>
+				</div>
 			</div>
 		</main>
+		<footer class="footer">
+			<div class="section footer__container">
+				<div class="sign w-100"><img src="./img/pielmien-sign.svg" alt="" srcset=""></div>
+				<div class="box1">
+					<div class="text--classic color--blonde bold">Półprodukty mrożone z dostawą w Warszawie.</div>
+					<div class="text--middle color--white mt-2">Od 2016 roku produkujemy oryginalne półprodukty kuchni wschodniej (pielmieni, wareniki ukraińskie, kotlety mielone)
+						i dostarczamy na terenie całej Warszawy i okolic.
+					</div>
+					<div  class="dale color--white mt-4"><a href="#">Czytaj dalej...</a></div>
+				</div>
+				<div class="box2">
+					<div class="text--classic color--blonde bold" href="#">Nasze menu</div>
+					<div class="text--middle color--white mt-2"><a href="#">Pielmieni</a></div>
+					<div class="dale color--white mt-2"><a href="#">Wareniki ukraińskie </a></div>
+					<div class="text--middle color--white mt-2"><a href="#">Kotlety mielone</a></div>
+				</div>
+				<div class="box3">
+					<div class="text--classic color--blonde bold" href="#">Dodatkowe informacje</div>
+					<div class="text--middle color--white mt-2"><a href="#">Dostawa i płatności</a></div>
+					<div class="dale color--white mt-2"><a href="#">Współpraca </a></div>
+					<div class="text--middle color--white mt-2"><a href="#">Kontakt</a></div>
+				</div>
+				<div class="box4">
+					<div class="text--classic color--blonde bold" href="#">Dolącz do nas</div>
+					<div class="text--middle color--white mt-2"><a href="#"><img src="./img/twitter.svg" alt="" srcset=""> <span>Twitter</span></a></div>
+					<div class="dale color--white mt-2"><a href="#"><img src="./img/facebook.svg" alt="" srcset=""> <span>Facebook</span></a></div>
+					<div class="text--middle color--white mt-2"><a href="#"><img src="./img/instagram.svg" alt="" srcset=""> <span>Instagram</span></a></div>
+				</div>
+				<div class="box5 d-f w-100 mt-7">
+					<div class="prava text--middle color--white">Wszelkie prawa zastrzeżone © 2020, Pielmień.pl</div>
+					<div class="poli text--middle color--white"><a class="color--white" href="#">Polityka prywatności</a></div>
+					<div class="digital text--middle color--white"><a href="https://dankordigital.com/"><img src="./img/dankordigital-logo-w.svg" alt="" srcset=""></a></div>
+				</div>
+			</div>
+		</footer>
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

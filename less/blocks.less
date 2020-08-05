@@ -1,3 +1,8 @@
+.section{
+  padding: 50px 10px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
 body{
 	color: #colors[dark-blue];
 	font-family: #fonts[regular];
@@ -8,7 +13,7 @@ body{
 		margin: 0 auto;
 		background-color: #colors[cream];
 		.header{
-			padding: 40px 0 50px 0;
+      padding: 40px 0 50px 0;      
 			&__contacts{
 				display: flex;
 				justify-content: space-between;
@@ -24,9 +29,56 @@ body{
         align-items: center;
         .nav{
           margin-right: 60px;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
         }
         .last {
           margin-right: 140px;
+        }
+        .our-menu {
+          position: relative;
+          .dropdown-content{
+            width: 170px;
+            display: none;
+            position: absolute;
+            left: 0;
+            padding: 25px 25px;
+            margin-top: 17px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 38px 0px rgba(171, 171, 171, 0.35);
+            font-family: 'Myriad-Regular';
+            z-index:99;
+            &__ul{
+                padding-left: 0;
+                margin:0;
+            }
+            &__li{
+                list-style: none;
+            }
+            &__a{
+                font-size: 20px;
+                color: #colors[dark-blue];
+                margin-bottom: 10px;
+                &:hover{
+                  text-decoration: underline;
+                }
+                &--active{
+                  color:#colors[white];
+                }
+            }
+            &.show{
+                display: block;
+            }
+            @media screen and (max-width: 991px){
+                right: 10px;
+                &__a{
+                    font-size: 18px;
+                }
+            }
+          }
         }
 			}
 			&__lang{
@@ -39,7 +91,17 @@ body{
 				.PL{
 					margin-right: 15px;
 				}
-			}
+      }
+      @media screen and (max-width: 940px) {
+        &__menu {
+          .nav {
+            margin-right: 40px;
+          }
+          .last {
+            margin-right: 40px;
+          }
+        }
+      }
     }
     .main{
       &__slider{
@@ -64,23 +126,19 @@ body{
           overflow: hidden;
           &__text{
             max-width: 500px;
+            width: 50%;
             background-color: #colors[dark-blue];
             color: #colors[white];
             display: block;
             padding: 80px 30px 30px 30px;
           }
           &__img{
-            width: 100%;
+            width: 50%;
             max-width: 100%;
           }
         }
-      } 
-      &__section {
-        max-width: 1140px;
-        margin: 0 auto;
       }
-      .section{
-        padding: 50px 0;
+      &__section-2, .section-2{
         &--title {
           max-width: 650px;
           margin: 0 auto;
@@ -112,21 +170,207 @@ body{
             margin: 0 20px;
           }
         }
+      }
+      &__section-3, .section-3 {
         &__store{
           flex-wrap: wrap;
         }
       }
-    }
-    .section-4 {
-      .user {
-        &__ava{
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
+      &__section-4 {
+        padding: 50px 0 100px 0;
+        .users-slider{
+          max-width: 1140px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .slide {
+          flex-wrap: wrap;
+        }
+        .user {
+          padding: 20px;
+          background-color: #colors[white];
+          box-shadow: 0px 8px 16px rgba(174, 136, 123, 0.16);
+          border-radius: 8px;
+          max-width: 505px;
+          margin-top: 30px;
+          &:nth-child(even) {
+            margin-left: 30px;
+          }
+          &:nth-child(odd) {
+            margin-left: 12px;
+          }
+          &__ava {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+          }
+        }
+      }
+      &__section-5, .section-5 {
+        background-color: #colors[white];
+        &__img {
+          max-width: 100%;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 940px) {
+        &__slider{
+          .slide {
+            &__text{
+              padding: 50px 30px 30px 30px;
+            }
+            &__button {
+              margin-top: 60px !important;
+            }
+          }
+        }
+        &__section-2, .section-2 {
+          &__content {
+            .item {
+              max-width: 300px;
+              &__name {
+                font-size: 22px !important;
+              }
+              &__img {
+                max-width: 300px;
+              }
+            }
+            
+          }
+        }
+        &__section-4 {
+          // .users-slider {
+          //   .slick-slide {
+          //     width: 940px !important;
+          //   }
+          // }
+          .user {
+            max-width: 400px;
+            &:nth-child(odd) {
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 720px) {
+        &__slider{
+          .slide {
+            &__title {
+              display: block !important;
+            }
+            &__text{
+              padding: 10px 10px 20px 20px;
+            }
+            &__button {
+              margin-top: 20px !important;
+            }
+          }
+        }
+        &__section-2, .section-2 {
+          &__content {
+            .item {
+              display: flex;
+              max-width: 100%;
+              overflow: auto;
+              flex-wrap: nowrap;
+              margin-top: 30px;
+              &__name {
+                font-size: 24px !important;
+                padding: 70px 65px;
+                width: 263px;
+              }
+              &__img {
+                max-width: 300px;
+              }
+            }
+            
+          }
+        }
+        .section-3__store {
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+        &__section-4 {
+          .user {
+            max-width: 600px;
+            margin: 20px 0 0 20px !important;
+          }
+        }
+        &__section-5, .section-5 {
+          .content {
+            text-align: center;
+          }
+          &__img {
+            margin: 0 auto;
+          }
         }
       }
     }
-	}
+  }
+}
+.footer {
+  background: #colors[dark-blue];
+  .sign {
+    margin-bottom: 20px;
+  }
+  a {
+    color: #colors[white];
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }  
+  .box1 {
+    flex-wrap: wrap;
+    flex: 1;
+    order: 1;
+    width: 35%;
+    margin-right: 20px;
+  }
+  .box2 {
+    flex-wrap: wrap;
+    flex: 0.5;
+    order: 2;
+    width: 21%;
+  }
+  .box3 {
+    flex-wrap: wrap;
+    flex: 0.5;
+    order: 3;
+    width: 21%;
+  }
+  .box4 {
+    flex-wrap: wrap;
+    flex: 0.5;
+    order: 4;
+    width: 21%;
+  }
+  .box5 {
+    order: 5;
+    .prava {
+      flex: 1.5;
+    }
+    .poli {
+      flex: 0.5;
+    }
+    .digital {
+      flex: 0.5;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    .box1{
+      flex: auto;
+      order: 1;
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
 }
 .product {
   background-color: #colors[white];
@@ -137,8 +381,10 @@ body{
   border: 1px solid #colors[hex];
   position: relative;
   margin: 0 10px;
-  &:hover{
-    box-shadow: 0px 8px 16px rgba(174, 136, 123, 0.4);
+  &__weight {
+    position: absolute;
+    top: 97px;
+    right: 114px;
   }
   &__button{
     width: 113px;
@@ -177,12 +423,21 @@ body{
       width: 80px;
     }
   }
-  .count {
-    &__number {
-      background: #f2f2f2;
-      padding: 5px 15px;
-      border-radius: 4px;
-      margin: 0 10px;
+  @media screen and (max-width:940px) {
+    max-width: 200px;
+    padding: 10px;
+    margin: 0;
+    &__weight {
+      top: 84px;
+      right: 88px;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    max-width: 260px;
+    padding: 30px 20px 20px 30px;
+    &__weight {
+      top: 105px;
+      right: 133px;
     }
   }
 }

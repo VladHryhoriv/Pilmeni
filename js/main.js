@@ -1,41 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const lang = document.querySelector(".menu__list");
+  const burger = document.querySelector(".burger-menu");
 
-  let number = 1;
-
-  const to_basket = document.getElementById("to_basket");
-  const count = document.querySelector(".count")
-  const count_number = document.querySelector(".count__number")
-  const plus = document.querySelector(".plus")
-  const minus = document.querySelector(".minus")
-
-  console.log(to_basket)
-
-  plus.addEventListener("click", function () {
-    ++number;
-    console.log(number)
-    count_number.innerHTML = number;
-  });
-
-  minus.addEventListener("click", function () {
-    
-    console.log(number)
-    if (number-1 <= 0) {
-      to_basket.classList.remove("not-active");
-      count.classList.toggle("not-active");
-    }
-    else {
-      number--;
-    count_number.innerHTML = number;
-    }
-  });
-
-  to_basket.addEventListener("click", function () {
-    console.log("===============")
-    console.log(to_basket)
+  burger.addEventListener("click", function () {
+    this.classList.toggle("active");
     this.classList.toggle("not-active");
-    count.classList.remove("not-active");
+    menu.classList.toggle("header__nav_active");
+    body.classList.toggle("active");
   });
-    
+  lang.addEventListener("click", function () {
+    document.getElementById("myDropdown").classList.toggle("show");
+  });
+
 });
 
 $(document).ready(function(){
@@ -44,13 +20,43 @@ $(document).ready(function(){
     centerPadding: '150px',
     slidesToShow: 1,
     dots: true,
+    arrows : false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 940,
+        settings: {
+          centerPadding: '0',
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '0',
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+$(document).ready(function(){
+  $('.users-slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 1,
+    dots: true,
+    arrows : false,
+    responsive: [
+      {
+        breakpoint: 940,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
           slidesToShow: 1
         }
       },

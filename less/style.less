@@ -16,6 +16,9 @@
 	hex: #EADDD9;
 	light-grey: #F2F2F2;
 }
+p {
+	color: #colors[black];
+}
 a{
 	text-decoration: none;
 }
@@ -68,6 +71,11 @@ h1,h2,h3,h4{
 	&-start{
 		text-align: start;
 	}
+	@media screen and (max-width: 720px) {
+		&--normal {
+			font-size: 18px;
+		}
+	}
 }
 .title{
 	&--large{
@@ -77,6 +85,19 @@ h1,h2,h3,h4{
 	&--normal{
 		font-size: 24px;
 		font-family: #fonts[middle];
+	}
+	@media screen and (max-width: 940px) {
+		&--normal {
+			font-size: 22px;
+		}
+	}
+	@media screen and (max-width: 720px) {
+		&--large {
+			font-size: 28px;
+		}
+		&--normal {
+			font-size: 22px;
+		}
 	}
 }
 button{
@@ -110,19 +131,22 @@ button{
 }
 .color{
 	&--white{
-		color: #colors[white];
+		color: #colors[white] !important;
 	}
 	&--dark-blue{
-		color: #colors[dark-blue];
+		color: #colors[dark-blue] !important;
 	}
 	&--blonde{
-		color: #colors[blonde];
+		color: #colors[blonde] !important;
 	}
 	&--brown{
-		color: #colors[brown];
+		color: #colors[brown] !important;
 	}
 	&--black{
-		color: #colors[black];
+		color: #colors[black] !important;
+	}
+	&--light-grey {
+		color: #colors[hex] !important;
 	}
 	&--grey {
 		color: #colors[light-grey];
@@ -152,7 +176,25 @@ button{
 .active {
 	display: block;
 }
+.for-desktop {
+	display: block !important;
+	&--flex {
+		display: flex !important;
+	}
+	@media screen and (max-width: 720px) {
+		&,&--flex{
+			display: none !important;
+		}
+	}
+}
+.for-mobile {
+	display: none !important;
+	@media screen and (max-width: 720px) {
+		display: block !important;
+	}
+}
 @import "blocks.less";
 @import "mixin.less";
 @import "fonts.less";
+@import "burger.less";
 
