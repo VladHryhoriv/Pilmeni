@@ -1,3 +1,6 @@
+p {
+  color: #000000;
+}
 a {
   text-decoration: none;
 }
@@ -60,6 +63,11 @@ h4 {
   font-size: 24px;
   font-family: 'Sans-SemiBold';
 }
+@media screen and (max-width: 940px) {
+  .title--normal {
+    font-size: 22px;
+  }
+}
 button {
   border: none;
 }
@@ -88,19 +96,22 @@ button {
   font-family: 'Sans-Regular';
 }
 .color--white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .color--dark-blue {
-  color: #28387B;
+  color: #28387B !important;
 }
 .color--blonde {
-  color: #FFD69C;
+  color: #FFD69C !important;
 }
 .color--brown {
-  color: #AE887B;
+  color: #AE887B !important;
 }
 .color--black {
-  color: #000000;
+  color: #000000 !important;
+}
+.color--light-grey {
+  color: #EADDD9 !important;
 }
 .d-n {
   display: none;
@@ -118,7 +129,9 @@ button {
   align-items: center;
 }
 .section {
-  padding: 50px 0;
+  padding: 50px 10px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 body {
   color: #28387B;
@@ -164,6 +177,14 @@ body .wrapper-app .header__lang .basket {
 body .wrapper-app .header__lang .PL {
   margin-right: 15px;
 }
+@media screen and (max-width: 940px) {
+  body .wrapper-app .header__menu .nav {
+    margin-right: 40px;
+  }
+  body .wrapper-app .header__menu .last {
+    margin-right: 40px;
+  }
+}
 body .wrapper-app .main__slider .slick-slide {
   margin: 0 15px;
 }
@@ -181,54 +202,173 @@ body .wrapper-app .main__slider .slide {
 }
 body .wrapper-app .main__slider .slide__text {
   max-width: 500px;
+  width: 50%;
   background-color: #28387B;
   color: #ffffff;
   display: block;
   padding: 80px 30px 30px 30px;
 }
 body .wrapper-app .main__slider .slide__img {
-  width: 100%;
+  width: 50%;
   max-width: 100%;
 }
-body .wrapper-app .main__section {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-body .wrapper-app .main .section--title {
+body .wrapper-app .main__section-2--title,
+body .wrapper-app .main .section-2--title {
   max-width: 650px;
   margin: 0 auto;
 }
-body .wrapper-app .main .section__content {
+body .wrapper-app .main__section-2__content,
+body .wrapper-app .main .section-2__content {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-body .wrapper-app .main .section__content .item {
+body .wrapper-app .main__section-2__content .item,
+body .wrapper-app .main .section-2__content .item {
   flex-wrap: wrap;
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 8px 16px rgba(174, 136, 123, 0.16);
 }
-body .wrapper-app .main .section__content .item__name {
+body .wrapper-app .main__section-2__content .item__name,
+body .wrapper-app .main .section-2__content .item__name {
   padding: 15px 0;
 }
-body .wrapper-app .main .section__content .item__name img {
+body .wrapper-app .main__section-2__content .item__name img,
+body .wrapper-app .main .section-2__content .item__name img {
   margin-right: 10px;
 }
-body .wrapper-app .main .section__more,
-body .wrapper-app .main .section .more {
+body .wrapper-app .main__section-2__more,
+body .wrapper-app .main .section-2__more,
+body .wrapper-app .main__section-2 .more,
+body .wrapper-app .main .section-2 .more {
   max-width: 1140px;
   margin: 0 auto;
   padding: 30px 0;
   background-color: #ffffff;
   border-radius: 8px;
 }
-body .wrapper-app .main .section__more__text,
-body .wrapper-app .main .section .more__text {
+body .wrapper-app .main__section-2__more__text,
+body .wrapper-app .main .section-2__more__text,
+body .wrapper-app .main__section-2 .more__text,
+body .wrapper-app .main .section-2 .more__text {
   margin: 0 20px;
 }
-body .wrapper-app .main .section__store {
+body .wrapper-app .main__section-3__store,
+body .wrapper-app .main .section-3__store {
   flex-wrap: wrap;
+}
+body .wrapper-app .main__section-4 .users-slider {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+body .wrapper-app .main__section-4 .slide {
+  flex-wrap: wrap;
+}
+body .wrapper-app .main__section-4 .user {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(174, 136, 123, 0.16);
+  border-radius: 8px;
+  max-width: 505px;
+  margin-top: 30px;
+}
+body .wrapper-app .main__section-4 .user:nth-child(even) {
+  margin-left: 30px;
+}
+body .wrapper-app .main__section-4 .user:nth-child(odd) {
+  margin-left: 12px;
+}
+body .wrapper-app .main__section-4 .user__ava {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+body .wrapper-app .main__section-5,
+body .wrapper-app .main .section-5 {
+  background-color: #ffffff;
+}
+body .wrapper-app .main__section-5__img,
+body .wrapper-app .main .section-5__img {
+  max-width: 100%;
+  width: 50%;
+}
+@media screen and (max-width: 940px) {
+  body .wrapper-app .main__slider .slide__text {
+    padding: 50px 30px 30px 30px;
+  }
+  body .wrapper-app .main__slider .slide__button {
+    margin-top: 60px !important;
+  }
+  body .wrapper-app .main__section-2__content .item,
+  body .wrapper-app .main .section-2__content .item {
+    max-width: 300px;
+  }
+  body .wrapper-app .main__section-2__content .item__name,
+  body .wrapper-app .main .section-2__content .item__name {
+    font-size: 22px !important;
+  }
+  body .wrapper-app .main__section-2__content .item__img,
+  body .wrapper-app .main .section-2__content .item__img {
+    max-width: 300px;
+  }
+  body .wrapper-app .main__section-4 .user {
+    max-width: 400px;
+  }
+  body .wrapper-app .main__section-4 .user:nth-child(odd) {
+    margin-left: 6px;
+  }
+}
+.footer {
+  background: #28387B;
+}
+.footer a {
+  color: #ffffff;
+}
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .box1 {
+  flex-wrap: wrap;
+  flex: 1;
+  order: 1;
+  width: 35%;
+  margin-right: 20px;
+}
+.footer .box2 {
+  flex-wrap: wrap;
+  flex: 0.5;
+  order: 2;
+  width: 21%;
+}
+.footer .box3 {
+  flex-wrap: wrap;
+  flex: 0.5;
+  order: 3;
+  width: 21%;
+}
+.footer .box4 {
+  flex-wrap: wrap;
+  flex: 0.5;
+  order: 4;
+  width: 21%;
+}
+.footer .box5 {
+  order: 5;
+}
+.footer .box5 .prava {
+  flex: 1.5;
+}
+.footer .box5 .poli {
+  flex: 0.5;
+}
+.footer .box5 .digital {
+  flex: 0.5;
 }
 .product {
   background-color: #ffffff;
@@ -239,6 +379,11 @@ body .wrapper-app .main .section__store {
   border: 1px solid #EADDD9;
   position: relative;
   margin: 0 10px;
+}
+.product__weight {
+  position: absolute;
+  top: 97px;
+  right: 114px;
 }
 .product__button {
   width: 113px;
@@ -271,6 +416,17 @@ body .wrapper-app .main .section__store {
   margin-top: 10px;
   padding: 8px 2px;
   width: 80px;
+}
+@media screen and (max-width: 940px) {
+  .product {
+    max-width: 200px;
+    padding: 10px;
+    margin: 0;
+  }
+  .product__weight {
+    top: 84px;
+    right: 88px;
+  }
 }
 .mt-1 {
   margin-top: 10px !important;

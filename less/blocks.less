@@ -1,5 +1,7 @@
 .section{
-  padding: 50px 0;
+  padding: 50px 10px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 body{
 	color: #colors[dark-blue];
@@ -42,7 +44,17 @@ body{
 				.PL{
 					margin-right: 15px;
 				}
-			}
+      }
+      @media screen and (max-width: 940px) {
+        &__menu {
+          .nav {
+            margin-right: 40px;
+          }
+          .last {
+            margin-right: 40px;
+          }
+        }
+      }
     }
     .main{
       &__slider{
@@ -67,22 +79,19 @@ body{
           overflow: hidden;
           &__text{
             max-width: 500px;
+            width: 50%;
             background-color: #colors[dark-blue];
             color: #colors[white];
             display: block;
             padding: 80px 30px 30px 30px;
           }
           &__img{
-            width: 100%;
+            width: 50%;
             max-width: 100%;
           }
         }
-      } 
-      &__section {
-        max-width: 1140px;
-        margin: 0 auto;
       }
-       .section{
+      &__section-2, .section-2{
         &--title {
           max-width: 650px;
           margin: 0 auto;
@@ -114,15 +123,139 @@ body{
             margin: 0 20px;
           }
         }
+      }
+      &__section-3, .section-3 {
         &__store{
           flex-wrap: wrap;
         }
       }
+      &__section-4 {
+        .users-slider{
+          max-width: 1140px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .slide {
+          flex-wrap: wrap;
+        }
+        .user {
+          padding: 20px;
+          background-color: #colors[white];
+          box-shadow: 0px 8px 16px rgba(174, 136, 123, 0.16);
+          border-radius: 8px;
+          max-width: 505px;
+          margin-top: 30px;
+          &:nth-child(even) {
+            margin-left: 30px;
+          }
+          &:nth-child(odd) {
+            margin-left: 12px;
+          }
+          &__ava {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+          }
+        }
+      }
+      &__section-5, .section-5 {
+        background-color: #colors[white];
+        &__img {
+          max-width: 100%;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 940px) {
+        &__slider{
+          .slide {
+            &__text{
+              padding: 50px 30px 30px 30px;
+            }
+            &__button {
+              margin-top: 60px !important;
+            }
+          }
+        }
+        &__section-2, .section-2 {
+          &__content {
+            .item {
+              max-width: 300px;
+              &__name {
+                font-size: 22px !important;
+              }
+              &__img {
+                max-width: 300px;
+              }
+            }
+            
+          }
+        }
+        &__section-4 {
+          // .users-slider {
+          //   .slick-slide {
+          //     width: 940px !important;
+          //   }
+          // }
+          .user {
+            max-width: 400px;
+            &:nth-child(odd) {
+              margin-left: 6px;
+            }
+          }
+        }
+      }
     }
-    .section4 {
-
+  }
+}
+.footer {
+  background: #colors[dark-blue];
+  a {
+    color: #colors[white];
+  }
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }  
+  .box1 {
+    flex-wrap: wrap;
+    flex: 1;
+    order: 1;
+    width: 35%;
+    margin-right: 20px;
+  }
+  .box2 {
+    flex-wrap: wrap;
+    flex: 0.5;
+    order: 2;
+    width: 21%;
+  }
+  .box3 {
+    flex-wrap: wrap;
+    flex: 0.5;
+    order: 3;
+    width: 21%;
+  }
+  .box4 {
+    flex-wrap: wrap;
+    flex: 0.5;
+    order: 4;
+    width: 21%;
+  }
+  .box5 {
+    order: 5;
+    .prava {
+      flex: 1.5;
     }
-	}
+    .poli {
+      flex: 0.5;
+    }
+    .digital {
+      flex: 0.5;
+    }
+  }
 }
 .product {
   background-color: #colors[white];
@@ -133,6 +266,11 @@ body{
   border: 1px solid #colors[hex];
   position: relative;
   margin: 0 10px;
+  &__weight {
+    position: absolute;
+    top: 97px;
+    right: 114px;
+  }
   &__button{
     width: 113px;
     padding: 16px 20px;
@@ -163,6 +301,15 @@ body{
       margin-top: 10px;
       padding: 8px 2px;
       width: 80px;
+    }
+  }
+  @media screen and (max-width:940px) {
+    max-width: 200px;
+    padding: 10px;
+    margin: 0;
+    &__weight {
+      top: 84px;
+      right: 88px;
     }
   }
 }

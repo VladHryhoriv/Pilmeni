@@ -15,6 +15,9 @@
 	brown: #AE887B;
 	hex: #EADDD9;
 }
+p {
+	color: #colors[black];
+}
 a{
 	text-decoration: none;
 }
@@ -77,6 +80,11 @@ h1,h2,h3,h4{
 		font-size: 24px;
 		font-family: #fonts[middle];
 	}
+	@media screen and (max-width: 940px) {
+		&--normal {
+			font-size: 22px;
+		}
+	}
 }
 button{
 	border:none;
@@ -109,19 +117,22 @@ button{
 }
 .color{
 	&--white{
-		color: #colors[white];
+		color: #colors[white] !important;
 	}
 	&--dark-blue{
-		color: #colors[dark-blue];
+		color: #colors[dark-blue] !important;
 	}
 	&--blonde{
-		color: #colors[blonde];
+		color: #colors[blonde] !important;
 	}
 	&--brown{
-		color: #colors[brown];
+		color: #colors[brown] !important;
 	}
 	&--black{
-		color: #colors[black];
+		color: #colors[black] !important;
+	}
+	&--light-grey {
+		color: #colors[hex] !important;
 	}
 }
 .d-n{
