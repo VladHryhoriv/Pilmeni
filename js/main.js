@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const lang = document.querySelector(".menu__list");
+
+  lang.addEventListener("click", function () {
+    document.getElementById("myDropdown").classList.toggle("show");
+  });
+
+});
+
 $(document).ready(function(){
   $('.main__slider').slick({
     centerMode: true,
