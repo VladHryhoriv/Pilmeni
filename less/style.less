@@ -99,6 +99,19 @@ h1,h2,h3,h4{
 			font-size: 22px;
 		}
 	}
+	@media screen and (max-width: 480px) {
+		&--normal {
+			font-size: 28px;
+		}
+	}
+	@media screen and (max-width: 320px) {
+		&--large {
+			font-size: 22px;
+		}
+		&--normal {
+			font-size: 16px;
+		}
+	}
 }
 button{
 	border:none;
@@ -188,9 +201,59 @@ button{
 	}
 }
 .for-mobile {
+	&--flex {
+		display: none !important;
+	}
 	display: none !important;
 	@media screen and (max-width: 720px) {
-		display: block !important;
+		&{
+			display: block !important;
+		}
+		&--flex {
+			display: flex !important ;
+		}
+	}
+	&--m {
+		&--flex {
+			display: none !important;
+		}
+		display: none !important;
+		@media screen and (max-width: 480px) {
+			&{
+				display: block !important;
+			}
+			&--flex {
+				display: flex !important ;
+			}
+		}
+	}
+}
+.for-tablet {
+	display: none !important;
+	&--flex {
+		display: none !important;
+	}
+  @media (min-width: 481px) {
+		&--flex {
+			display: flex !important;
+		}
+    display: block !important;
+  }
+  @media (min-width: 720px) {
+		&,&--flex {
+			display: none !important;
+		}
+  }
+}
+.for-tablet-desktop {
+	display: block !important;
+	&--flex {
+		display: flex !important;
+	}
+	@media screen and (max-width: 480px) {
+		&,&--flex{
+			display: none !important;
+		}
 	}
 }
 @import "blocks.less";

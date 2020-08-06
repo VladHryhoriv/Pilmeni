@@ -4,7 +4,83 @@
 	z-index: 99999;
 	background-color: #colors[dark-blue];
 	padding: 10px;
-	margin-right: 48px;
+  margin-right: 148px;
+  .menu{
+    display: none;
+  }
+    .menu {
+      &__active {
+        display: block;
+        .wrapper-nav {
+          display: block;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          .cd-nav {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            background-color: #colors[dark-blue];
+            padding: 40px 20px;
+            .top-wrapper {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              .open-menu {
+                width: 20px;
+                height: 20px;
+                .bar-1,.bar-2,.bar-3{
+                  display: block;
+                  width: 100%;
+                  border-radius: 3px;
+                  height: 4px;
+                  background:#colors[blonde];
+                  transition: all 0.3s;
+                  position: relative;
+                }
+                .bar-1 {
+                  transform: rotate(-45deg) translate(-4px, 4px);
+                }
+                .bar-2 {opacity: 0;}
+                .bar-3 {
+                  transform: rotate(45deg) translate(-2px, -2px);
+                }
+            }
+            
+            }
+            .cd-primary-nav{
+              padding: 0;
+              li{
+                margin: 15px 0;
+                a{
+                  color: #colors[white] !important;
+                font-weight: bold;
+                }
+              }
+              
+            }
+            .is-hidden{
+              display: none
+            }
+          }
+        }
+        .cd-primary-nav{
+          ul{
+            &.is-hidden {
+              @include transform(translateX(0));
+            }
+          }
+        }
+      }
+    }
+  @media screen and (max-width:480px) {
+    margin-right: 20px;
+  }
 }
 
 .burger-menu__span {
