@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  let count = 1;
+
   const lang = document.querySelector(".menu__list");
   const burger = document.querySelector(".burger-menu");
   const width = document.documentElement.clientWidth;
   const menu_next = document.querySelector(".next-menu")
+  const to_basket = document.querySelector(".product__basket")
 
   const close = document.querySelector(".close")
 
@@ -29,39 +33,50 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
   }
-  $('.back-to-menu').on('click', function() {
-    console.log($(this).parent('.cd-secondary-nav').parent('ul'))
-    $(this).parent('.cd-secondary-nav').addClass('is-hidden').removeClass('moves-out')
+  $('.count__plus').on('click', function() {
+    count++;
+    $('.count__number').text(count)
   })
+  $('.count__minus').on('click', function() {
+    if(count-1 <= 0) {
+      console.log(count)
+      $(to_basket).removeClass('not-active')
+      $('.product__count').addClass('not-active')
+    }
+    else {
+      count--;
+      $('.count__number').text(count)
+    }
+  })
+  to_basket.addEventListener('click', function() {
+    $(this).addClass('not-active')
+    $('.product__count').removeClass('not-active')
+  })
+
   close.addEventListener("click", function() {
-    console.log("hhhhhhhhhh")
     $('.menu').addClass('menu__not-active').removeClass('menu__active')
-    // document.querySelector(".menu").classList.toggle('menu__not-active')
-    // document.querySelector(".menu").classList.remove('menu__active')
   })
+
   burger.addEventListener("click", function () {
     this.classList.toggle("active");
     this.classList.toggle("not-active");
     $('.menu').removeClass('menu__not-active').addClass('menu__active')
-    // document.querySelector(".menu").classList.remove('menu__not-active')
-    // document.querySelector(".menu").classList.toggle('menu__active')
   });
+
   lang.addEventListener("click", function () {
     document.getElementById("myDropdown").classList.toggle("show");
   });
+
   menu_next.addEventListener("click", function() {
     document.querySelector('.cd-secondary-nav').classList.remove('is-hidden')
     document.querySelector('.cd-secondary-nav').classList.toggle('moves-out')
 
   })
-  // $('.has-children').children('div').on('click', function(event){
-  //   var selected = $(this);
-  //   console.log(selected)
-	// 	if( selected.next('ul').hasClass('is-hidden') ) {
-	// 		selected.next('ul').removeClass('is-hidden').addClass('moves-out');
-	// 	} 
-	// });
 
+  $('.back-to-menu').on('click', function() {
+    console.log($(this).parent('.cd-secondary-nav').parent('ul'))
+    $(this).parent('.cd-secondary-nav').addClass('is-hidden').removeClass('moves-out')
+  })
 });
 
 $(document).ready(function(){
