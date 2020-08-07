@@ -396,6 +396,9 @@ body .wrapper-app .main__slider .slide {
   box-sizing: border-box;
   background-size: cover;
 }
+body .wrapper-app .main__slider .slide__button {
+  cursor: pointer;
+}
 body .wrapper-app .main__slider .slide__text {
   max-width: 500px;
   width: 100%;
@@ -407,6 +410,10 @@ body .wrapper-app .main__slider .slide__text {
 body .wrapper-app .main__slider .slide__img {
   width: 45%;
   max-width: 100%;
+}
+body .wrapper-app .main__section-2,
+body .wrapper-app .main .section-2 {
+  cursor: pointer;
 }
 body .wrapper-app .main__section-2--title,
 body .wrapper-app .main .section-2--title {
@@ -492,6 +499,10 @@ body .wrapper-app .main__section-4 .user__name .rating {
 body .wrapper-app .main__section-5,
 body .wrapper-app .main .section-5 {
   background-color: #ffffff;
+}
+body .wrapper-app .main__section-5__button,
+body .wrapper-app .main .section-5__button {
+  cursor: pointer;
 }
 body .wrapper-app .main__section-5__img,
 body .wrapper-app .main .section-5__img {
@@ -827,6 +838,9 @@ body .wrapper-app .main .section-5__img {
   position: relative;
   margin: 0 10px;
 }
+.product:hover {
+  box-shadow: 0px 8px 16px rgba(174, 136, 123, 0.4);
+}
 .product__count__number,
 .product .count__number {
   background: #F2F2F2;
@@ -846,6 +860,7 @@ body .wrapper-app .main .section-5__img {
   right: 114px;
 }
 .product__button {
+  cursor: pointer;
   width: 113px;
   padding: 16px 20px;
 }

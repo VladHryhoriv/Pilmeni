@@ -152,6 +152,9 @@ body{
           padding: 0 360px 0 0;
           box-sizing: border-box;
           background-size: cover;
+          &__button {
+            cursor: pointer;
+          }
           &__text{
             max-width: 500px;
             width: 100%;
@@ -167,6 +170,7 @@ body{
         }
       }
       &__section-2, .section-2{
+        cursor: pointer;
         &--title {
           max-width: 650px;
           margin: 0 auto;
@@ -242,6 +246,9 @@ body{
       }
       &__section-5, .section-5 {
         background-color: #colors[white];
+        &__button {
+          cursor: pointer;
+        }
         &__img {
           max-width: 100%;
           width: 50%;
@@ -594,6 +601,9 @@ body{
   border: 1px solid #colors[hex];
   position: relative;
   margin: 0 10px;
+  &:hover {
+    box-shadow: 0px 8px 16px rgba(174, 136, 123, 0.4);
+  }
   &__count, .count{
     &__number {
       background: #colors[light-grey];
@@ -611,6 +621,7 @@ body{
     right: 114px;
   }
   &__button{
+    cursor: pointer;
     width: 113px;
     padding: 16px 20px;
   }
