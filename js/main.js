@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const lang = document.querySelector(".menu__list");
   const burger = document.querySelector(".burger-menu");
   const width = document.documentElement.clientWidth;
+  const menu_next = document.querySelector(".next-menu")
+
+  const close = document.querySelector(".close")
+
     console.log(width)
   if(width <= 480 ) {
     const store = document.querySelector(".store").classList.toggle('single-item');
@@ -25,16 +29,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
   }
-
+  $('.back-to-menu').on('click', function() {
+    console.log($(this).parent('.cd-secondary-nav').parent('ul'))
+    $(this).parent('.cd-secondary-nav').addClass('is-hidden').removeClass('moves-out')
+  })
+  close.addEventListener("click", function() {
+    console.log("hhhhhhhhhh")
+    $('.menu').addClass('menu__not-active').removeClass('menu__active')
+    // document.querySelector(".menu").classList.toggle('menu__not-active')
+    // document.querySelector(".menu").classList.remove('menu__active')
+  })
   burger.addEventListener("click", function () {
     this.classList.toggle("active");
     this.classList.toggle("not-active");
-    document.querySelector(".menu").classList.remove('menu__not-active')
-    document.querySelector(".menu").classList.toggle('menu__active')
+    $('.menu').removeClass('menu__not-active').addClass('menu__active')
+    // document.querySelector(".menu").classList.remove('menu__not-active')
+    // document.querySelector(".menu").classList.toggle('menu__active')
   });
   lang.addEventListener("click", function () {
     document.getElementById("myDropdown").classList.toggle("show");
   });
+  menu_next.addEventListener("click", function() {
+    document.querySelector('.cd-secondary-nav').classList.remove('is-hidden')
+    document.querySelector('.cd-secondary-nav').classList.toggle('moves-out')
+
+  })
+  // $('.has-children').children('div').on('click', function(event){
+  //   var selected = $(this);
+  //   console.log(selected)
+	// 	if( selected.next('ul').hasClass('is-hidden') ) {
+	// 		selected.next('ul').removeClass('is-hidden').addClass('moves-out');
+	// 	} 
+	// });
 
 });
 

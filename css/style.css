@@ -876,27 +876,51 @@ body .wrapper-app .main .section-5__img {
 .burger-menu {
   width: 25px;
   cursor: pointer;
-  z-index: 99999;
+  z-index: 8;
   background-color: #28387B;
   padding: 10px;
   margin-right: 148px;
 }
-.burger-menu .menu {
+@media screen and (max-width: 480px) {
+  .burger-menu {
+    margin-right: 20px;
+  }
+}
+.menu {
   display: none;
 }
-.burger-menu .menu__active {
+.menu__active {
   display: block;
 }
-.burger-menu .menu__active .wrapper-nav {
+.menu__active .moves-out {
+  display: block;
+  animation-name: moves-out;
+  -webkit-animation-name: moves-out;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+@keyframes moves-out {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.menu__active .wrapper-nav {
   display: block;
   position: absolute;
+  z-index: 9;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav {
+.menu__active .wrapper-nav .cd-nav {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -905,18 +929,21 @@ body .wrapper-app .main .section-5__img {
   background-color: #28387B;
   padding: 40px 20px;
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .top-wrapper {
+.menu__active .wrapper-nav .cd-nav .top-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu {
+.menu__active .wrapper-nav .cd-nav .top-wrapper .flag .PL {
+  margin-right: 10px;
+}
+.menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu {
   width: 20px;
   height: 20px;
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-1,
-.burger-menu .menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-2,
-.burger-menu .menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-3 {
+.menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-1,
+.menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-2,
+.menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-3 {
   display: block;
   width: 100%;
   border-radius: 3px;
@@ -925,35 +952,54 @@ body .wrapper-app .main .section-5__img {
   transition: all 0.3s;
   position: relative;
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-1 {
+.menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-1 {
   transform: rotate(-45deg) translate(-4px, 4px);
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-2 {
+.menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-2 {
   opacity: 0;
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-3 {
+.menu__active .wrapper-nav .cd-nav .top-wrapper .open-menu .bar-3 {
   transform: rotate(45deg) translate(-2px, -2px);
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .cd-primary-nav {
+.menu__active .wrapper-nav .cd-nav .cd-primary-nav {
   padding: 0;
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .cd-primary-nav li {
+.menu__active .wrapper-nav .cd-nav .cd-primary-nav div {
+  color: #ffffff;
+  font-weight: bold;
+}
+.menu__active .wrapper-nav .cd-nav .cd-primary-nav ul {
+  padding: 0;
+}
+.menu__active .wrapper-nav .cd-nav .cd-primary-nav ul li {
+  list-style: none;
   margin: 15px 0;
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .cd-primary-nav li a {
+.menu__active .wrapper-nav .cd-nav .cd-primary-nav ul li a {
   color: #ffffff !important;
   font-weight: bold;
 }
-.burger-menu .menu__active .wrapper-nav .cd-nav .is-hidden {
+.menu__active .wrapper-nav .cd-nav .cd-primary-nav .cd-secondary-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background-color: #28387B;
+  padding: 40px 20px;
+}
+.menu__active .wrapper-nav .cd-nav .cd-primary-nav .cd-secondary-nav div {
+  color: #ffffff;
+  font-weight: bold;
+}
+.menu__active .wrapper-nav .cd-nav .cd-primary-nav .cd-secondary-nav .back-to-menu .left-arrow {
+  margin-right: 10px;
+}
+.menu__active .wrapper-nav .cd-nav .is-hidden {
   display: none;
 }
-.burger-menu .menu__active .cd-primary-nav ul.is-hidden {
+.menu__active .cd-primary-nav ul.is-hidden {
   @include transform(translateX(0));
-}
-@media screen and (max-width: 480px) {
-  .burger-menu {
-    margin-right: 20px;
-  }
 }
 .burger-menu__span {
   display: block;
