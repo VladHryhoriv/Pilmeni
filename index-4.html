@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" content="initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+	<title>Document</title>
+</head>
+<body>
+  <div class="wrapper-app">
+    <header class="header">
+      <div class="header__contacts">
+        <div class="schedule for-desktop">
+          <div class="schedule__text text--middle">Працюємо для вас</div>
+          <div class="time title--normal">od 10:00 do 20:00</div>
+        </div>
+        <div class="burger-menu for-mobile">
+          <span class="burger-menu__span bar1"></span>
+          <span class="burger-menu__span bar2"></span>
+          <span class="burger-menu__span bar3"></span>
+        </div>
+        <div class="menu menu__not-active">
+          <div class="wrapper-nav">
+            <nav class="cd-nav moves-out">
+              <div class="top-wrapper">
+                <div class="open-menu close">
+                  <span class="bar-1"></span>
+                  <span class="bar-2"></span>
+                  <span class="bar-3"></span>
+                </div>
+                <div class="flag">
+                  <img src="./img/PL-flag.svg" class="PL" alt="" srcset="">
+                  <img src="./img/GB-flag.svg" class="GB" alt="" srcset="">
+                </div>
+              </div>
+              
+              <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+                <li class="has-children">
+                  <div class="w-100 d-f justify-between next-menu">Nasze menu <img src="./img/right-arrow.svg" alt="" srcset=""></div>
+                  <ul class="cd-secondary-nav is-hidden">
+                    <div class="back-to-menu color--blonde">
+                        <img src="./img/left-arrow.svg" alt="" srcset="" class="left-arrow">
+                        <span class="back">Back</span>
+                    </div>
+                    <li class="go-back"><a href="#0">Wszystkie półprodukty</a></li>
+                    <li class="see-all"><a href="#">Pielmieni</a></li>
+                    <li class="has-children"><a href="#">Wareniki ukraińskie</a></li>
+                    <li class="has-children"><a href="#">Kotlety mielone</a></li>		
+                  </ul>
+                </li>
+                <ul class="main-menu">
+                  <li class="has-children"><a href="#">Promocje</a></li>
+                  <li class="has-children"><a href="#">Dostawa i płatności</a></li>
+                  <li class="has-children"><a href="#">Blog</a></li>
+                  <li class="has-children"><a href="#">O nas</a></li>	
+                  <li class="has-children"><a href="#">Współpraca</a></li>	
+                  <li class="has-children"><a href="#">Kontakt</a></li>	
+                  <li class="has-children mt-6"><a href="#">Polityka prywatności</a></li>	
+                </ul>
+              </ul> <!-- primary-nav -->
+            
+          </nav> 
+          </div>
+          
+        </div>
+        <div class="header__logo">
+          <img src="./img/logo.svg" alt="" srcset="">
+        </div>
+        <div class="header__lang for-mobile--flex">
+          <img src="./img/basket.svg" class="basket" alt="" srcset="">
+          <img src="./img/PL-flag.svg" class="PL for-tablet" alt="" srcset="">
+          <img src="./img/GB-flag.svg" class="GB for-tablet" alt="" srcset="">
+        </div>
+        <div class="phone for-desktop">
+          <div class="phone__text text--middle">Zamów przez telefon</div>
+          <div class="phone__number time title--normal">+48 512 261 944</div>
+        </div>
+      </div>
+      
+      <div class="header__menu mt-8 for-desktop--flex">
+          <span class="our-menu text--normal regular nav menu__list">
+            Nasze menu <img src="./img/DownArrow.svg" alt="" srcset="">
+            <div id="myDropdown" class="dropdown-content">
+              <ul class="dropdown-content__ul">
+                <li class="dropdown-content__li mt-1">
+                  <a
+                    class="dropdown-content__a bold"
+                    href="#"
+                    >Pielmieni</a
+                  >
+                </li>
+                <li class="dropdown-content__li mt-1">
+                  <a
+                    class="dropdown-content__a bold"
+                    href="#"
+                    >Wareniki Ukraińskie</a
+                  >
+                </li>
+                <li class="dropdown-content__li mt-1">
+                  <a
+                    class="dropdown-content__a bold"
+                    href="#"
+                    >Kotlety mielone</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </span>
+          <span class="text--normal regular nav">Promocje</span>
+          <span class="text--normal regular nav">Dostawa i płatności</span>
+          <span class="text--normal regular nav">Blog</span>
+          <span class="text--normal regular nav">O nas</span>
+          <span class="text--normal regular nav last">Współpraca</span>
+          <div class="header__lang">
+            <img src="./img/basket.svg" class="basket" alt="" srcset="">
+            <img src="./img/PL-flag.svg" class="PL" alt="" srcset="">
+            <img src="./img/GB-flag.svg" class="GB" alt="" srcset="">
+          </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="order__wrapper">
+        <section class="order d-f justify-between">
+        <div class="order__img">
+          <img src="./img/pelmeni.svg" alt="" srcset="">
+          <div class="order__storage mt-4 color--brown">
+            Składniki: ciasto, podgrzybki., cebula, masło, sól, pieprz.
+          </div>
+        </div>
+        <div class="order__text">
+          <div class="title--large order__top-text d-f w-100 justify-between">
+            <div class="order__name">Pielmieni “Wiatskie”</div>
+            <div class="order__wight middle">500 g</div>
+          </div>
+          <div class="order__main text--normal mt-2">grzyby leśne</div>
+          <p>
+            „Za prawdę matkę zsyłają na Wiatkę” lub „na Wiatce swoje porządki” — tak mówi się po rosyjsku. Region wiatski jest znany w całej Rosji ze swoich lasów. A w nich są najlepsze grzyby. Dlatego 
+            wiatskich pielmieniach nie ma ani kawałka mięsa.
+            <p>
+              Jako nadzienie wykorzystujemy zmielone podgrzybki — smaczne, pożywne, a poza tym bardzo zdrowe. Przed tym jak trafić do pielmienia, są podsmażane z cebulą, co zapewnia miękki, a jednocześnie mocny smak.
+            </p>
+          </p>
+          <div class="order__basket d-f w-100 justify-between">
+            <div class="order__price title--normal color--black">24.50 zł</div>
+            <div class="order__count d-f align-center">
+              <img class="order__minus" src="./img/minus.svg" alt="">
+              <div class="order__number meddle title--normal color--black d-f justify-center align-center">1</div>
+              <img class="order__plus" src="./img/plus.svg" alt="">
+            </div>
+            <button class="classic-button--blue order__button">Do koszyka</button>
+          </div>
+        </div>
+      </section>
+      </div>
+      
+    <section class="category">
+        <div class="category__name color--brown d-f w-100 align-center justify-center">
+          <span class="category__title title--large">Pielmieni</span>
+        </div>
+      <div class="section-3__store section store d-f w-100">
+        <div class="product slide-1 w-100 mt-4">
+          <div class="product__weight">500 g</div>
+          <div class="marks text--very-small">
+            <div class="hit mark">HIT</div>
+            <div class="vegan mark">vegan</div> 
+            <div class="deser mark">deser</div>
+            <div class="dietetyczne mark">dietetyczne</div>
+          </div>
+          <img src="./img/pelmeni.svg" class="product__img" alt="">
+          <div class="product__name text--classic bold mt-1">Pielmieni Wiatskie</div>
+          <div class="product__short-name text--standart regular">(woł. + kurczak)</div>
+          <div class="product__description text--small color--brown regular mt-2">Składniki: ciasto, farsz woł.-wieprz., cebula, masło, sól, pieprz.</div>
+          <div class="wrapper-price d-f w-100 justify-between align-center mt-4">
+            <div class="product__price text--calssic color--black">19.50 zł</div>
+            <button class="product__basket classic-button--blue product__button">Do koszyka</button>
+            <div class="product__count not-active d-f align-center">
+              <img class="count__minus" src="./img/minus.svg" alt="">
+              <div class="count__number meddle text--normal color--black">1</div>
+              <img class="count__plus" src="./img/plus.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="product slide-2 w-100 mt-4">
+          <div class="product__weight">500 g</div>
+          <div class="marks text--very-small">
+            <div class="hit mark">HIT</div>
+            <div class="vegan mark">vegan</div> 
+            <div class="deser mark">deser</div>
+            <div class="dietetyczne mark">dietetyczne</div>
+          </div>
+          <img src="./img/pelmeni.svg" class="product__img" alt="">
+          <div class="product__name text--classic bold mt-1">Pielmieni Wiatskie</div>
+          <div class="product__short-name text--standart regular">(woł. + kurczak)</div>
+          <div class="product__description text--small color--brown regular mt-2">Składniki: ciasto, farsz woł.-wieprz., cebula, masło, sól, pieprz.</div>
+          <div class="wrapper-price d-f w-100 justify-between align-center mt-4">
+            <div class="product__price text--calssic color--black">19.50 zł</div>
+            <button class="product__basket classic-button--blue product__button">Do koszyka</button>
+            <div class="product__count not-active d-f align-center">
+              <img class="count__minus" src="./img/minus.svg" alt="">
+              <div class="count__number meddle text--normal color--black">1</div>
+              <img class="count__plus" src="./img/plus.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="product slide-3 w-100 mt-4">
+          <div class="product__weight">500 g</div>
+          <div class="marks text--very-small">
+            <div class="hit mark">HIT</div>
+            <div class="vegan mark">vegan</div> 
+            <div class="deser mark">deser</div>
+            <div class="dietetyczne mark">dietetyczne</div>
+          </div>
+          <img src="./img/pelmeni.svg" class="product__img" alt="">
+          <div class="product__name text--classic bold mt-1">Pielmieni Wiatskie</div>
+          <div class="product__short-name text--standart regular">(woł. + kurczak)</div>
+          <div class="product__description text--small color--brown regular mt-2">Składniki: ciasto, farsz woł.-wieprz., cebula, masło, sól, pieprz.</div>
+          <div class="wrapper-price d-f w-100 justify-between align-center mt-4">
+            <div class="product__price text--calssic color--black">19.50 zł</div>
+            <button class="product__basket classic-button--blue product__button">Do koszyka</button>
+            <div class="product__count not-active d-f align-center">
+              <img class="count__minus" src="./img/minus.svg" alt="">
+              <div class="count__number meddle text--normal color--black">1</div>
+              <img class="count__plus" src="./img/plus.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="product slide-4 w-100 mt-4">
+          <div class="product__weight">500 g</div>
+          <div class="marks text--very-small">
+            <div class="hit mark">HIT</div>
+            <div class="vegan mark">vegan</div> 
+            <div class="deser mark">deser</div>
+            <div class="dietetyczne mark">dietetyczne</div>
+          </div>
+          <img src="./img/pelmeni.svg" class="product__img" alt="">
+          <div class="product__name text--classic bold mt-1">Pielmieni Wiatskie</div>
+          <div class="product__short-name text--standart regular">(woł. + kurczak)</div>
+          <div class="product__description text--small color--brown regular mt-2">Składniki: ciasto, farsz woł.-wieprz., cebula, masło, sól, pieprz.</div>
+          <div class="wrapper-price d-f w-100 justify-between align-center mt-4">
+            <div class="product__price text--calssic color--black">19.50 zł</div>
+            <button class="product__basket classic-button--blue product__button" id="to_basket">Do koszyka</button>
+            <div class="product__count not-active d-f align-center">
+              <img class="count__minus" src="./img/minus.svg" alt="">
+              <div class="count__number meddle text--normal color--black">1</div>
+              <img class="count__plus" src="./img/plus.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="product slide-5 w-100 mt-4">
+          <div class="product__weight">500 g</div>
+          <div class="marks text--very-small">
+            <div class="hit mark">HIT</div>
+            <div class="vegan mark">vegan</div> 
+            <div class="deser mark">deser</div>
+            <div class="dietetyczne mark">dietetyczne</div>
+          </div>
+          <img src="./img/pelmeni.svg" class="product__img" alt="">
+          <div class="product__name text--classic bold mt-1">Pielmieni Wiatskie</div>
+          <div class="product__short-name text--standart regular">(woł. + kurczak)</div>
+          <div class="product__description text--small color--brown regular mt-2">Składniki: ciasto, farsz woł.-wieprz., cebula, masło, sól, pieprz.</div>
+          <div class="wrapper-price d-f w-100 justify-between align-center mt-4">
+            <div class="product__price text--calssic color--black">19.50 zł</div>
+            <button class="product__basket classic-button--blue product__button">Do koszyka</button>
+            <div class="product__count not-active d-f align-center">
+              <img class="count__minus" src="./img/minus.svg" alt="">
+              <div class="count__number meddle text--normal color--black">1</div>
+              <img class="count__plus" src="./img/plus.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-2__more w-100 d-f justify-center align-center color--brown mt-4">
+        <img src="./img/arrow.svg" alt="" srcset="">
+        <div class="back-to-store text--normal middle">Zobacz wszystkie</div>
+        <img src="./img/arrow.svg" alt="" srcset="">
+      </div>
+    </section>
+    <section class="some">
+      <div class="slide-1 hit__slide d-f">
+        <div class="hit__img">
+          <div class="marks">
+            <div class="hit mark">HIT</div>
+          </div>
+        </div>
+        <div class="hit__text">
+          <div class="slide__title title--large d-f w-100 justify-between">
+            <span>Zestaw na próbę</span>
+          </div>
+          <div class="description light title--normal regular mt-2">
+            250 g x 10 rodzajów przepysznych pielmieni i wareników 
+          </div>
+          <div class="d-f justify-between align-center mt-9">
+            <div class="hit__price color--blonde title--large">99.00 zt</div>
+            <button class="classic-button--white bold text--classic slide__button">Do koszyka</button>
+          </div>
+          
+        </div>
+      </div> 
+    </section>
+    </main>
+    <footer class="footer">
+			<section class="footer__container">
+				<div class="sign w-100"><img src="./img/pielmien-sign.svg" alt="" srcset=""></div>
+				<div class="box1">
+					<div class="text--classic color--blonde bold">Półprodukty mrożone z dostawą w Warszawie.</div>
+					<div class="text--middle color--white mt-2">Od 2016 roku produkujemy oryginalne półprodukty kuchni wschodniej (pielmieni, wareniki ukraińskie, kotlety mielone)
+						i dostarczamy na terenie całej Warszawy i okolic.
+					</div>
+					<div  class="dale color--white mt-4"><a href="#">Czytaj dalej...</a></div>
+				</div>
+				<div class="box2">
+					<div class="text--classic color--blonde bold" href="#">Nasze menu</div>
+					<div class="text--middle color--white mt-2"><a href="#">Pielmieni</a></div>
+					<div class="dale color--white mt-2"><a href="#">Wareniki ukraińskie </a></div>
+					<div class="text--middle color--white mt-2"><a href="#">Kotlety mielone</a></div>
+				</div>
+				<div class="box3">
+					<div class="text--classic color--blonde bold" href="#">Dodatkowe informacje</div>
+					<div class="text--middle color--white mt-2"><a href="#">Dostawa i płatności</a></div>
+					<div class="dale color--white mt-2"><a href="#">Współpraca </a></div>
+					<div class="text--middle color--white mt-2"><a href="#">Kontakt</a></div>
+				</div>
+				<div class="box4">
+					<div class="text--classic color--blonde bold" href="#">Dolącz do nas</div>
+					<div class="text--middle color--white mt-2"><a class=" d-f align-center" href="#"><img class="social-network__img" src="./img/twitter.svg" alt="" srcset=""> <span>Twitter</span></a></div>
+					<div class="dale color--white mt-2"><a class=" d-f align-center" href="#"><img class="social-network__img" src="./img/facebook.svg" alt="" srcset=""> <span>Facebook</span></a></div>
+					<div class="text--middle color--white mt-2"><a class=" d-f align-center" href="#"><img class="social-network__img" src="./img/instagram.svg" alt="" srcset=""> <span>Instagram</span></a></div>
+				</div>
+				<div class="box5 d-f w-100 mt-7">
+					<div class="prava text--middle color--white">Wszelkie prawa zastrzeżone © 2020, Pielmień.pl</div>
+					<div class="poli text--middle color--white"><a class="color--white" href="#">Polityka prywatności</a></div>
+					<div class="digital text--middle color--white"><a href="https://dankordigital.com/"><img src="./img/dankordigital-logo-w.svg" alt="" srcset=""></a></div>
+				</div>
+			</section>
+		</footer>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./slick/slick.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

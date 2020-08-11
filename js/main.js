@@ -1,20 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  let count = 1;
 
   const lang = document.querySelector(".menu__list");
   const burger = document.querySelector(".burger-menu");
   const width = document.documentElement.clientWidth;
   const menu_next = document.querySelector(".next-menu")
-  const to_basket = document.querySelector(".product__basket")
 
   const close = document.querySelector(".close")
 
     console.log(width)
   if(width <= 480 ) {
-    const store = document.querySelector(".store").classList.toggle('single-item');
     $(document).ready(function(){
-      $('.single-item').slick({
+      $('.store').slick({
         responsive: [
           {
             breakpoint: 481,
@@ -33,25 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
   }
-  $('.count__plus').on('click', function() {
-    count++;
-    $('.count__number').text(count)
-  })
-  $('.count__minus').on('click', function() {
-    if(count-1 <= 0) {
-      console.log(count)
-      $(to_basket).removeClass('not-active')
-      $('.product__count').addClass('not-active')
-    }
-    else {
-      count--;
-      $('.count__number').text(count)
-    }
-  })
-  to_basket.addEventListener('click', function() {
-    $(this).addClass('not-active')
-    $('.product__count').removeClass('not-active')
-  })
 
   close.addEventListener("click", function() {
     $('.menu').addClass('menu__not-active').removeClass('menu__active')
