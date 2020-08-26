@@ -7,6 +7,7 @@
 #colors() {
 	black: #000000;
 	dark-blue: #28387B;
+	violet: #658FF7;
 	cream: #FFFAF3;;
 	white: #ffffff;
 	blonde: #FFD69C;
@@ -238,6 +239,9 @@ button{
 	}
 }
 .for-tablet {
+	&--m {
+		display: none;
+	}
 	display: none !important;
 	&--flex {
 		display: none !important;
@@ -252,7 +256,12 @@ button{
 		&,&--flex {
 			display: none !important;
 		}
-  }
+	}
+	@media screen and (max-width: 720px) {
+		&--m{
+			display: block !important;
+		}
+	}
 }
 .for-tablet-desktop {
 	display: block !important;
@@ -264,6 +273,9 @@ button{
 			display: none !important;
 		}
 	}
+}
+.is-hidden,.sub-menu{
+	display: none
 }
 @import "blocks.less";
 @import "mixin.less";

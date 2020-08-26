@@ -19,7 +19,7 @@
     &__active {
       display: block;
       .moves-out{
-        display: block;
+        display: block !important;
         animation-name: moves-out;
         -webkit-animation-name: moves-out; 
      
@@ -90,29 +90,50 @@
           }
           .cd-primary-nav{
             padding: 0;
-            div {
-              color: #colors[white];
-              font-weight: bold;
-            }
-            ul {
-              padding: 0;
-              li{
-                list-style: none;
-                margin: 15px 0;
-                a{
-                  color: #colors[white] !important;
-                  font-weight: bold;
-                }
+            padding: 0;
+            li{
+              &:first-child::after{
+                content: '';
+                border: solid #colors[brown];
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                margin-left: 88px;
+              }
+              list-style: none;
+              margin: 15px 0;
+              a{
+                color: #colors[white] !important;
+                font-weight: bold;
               }
             }
-            .cd-secondary-nav {
+            .sub-menu {
+              display: none;
               position: absolute;
-              top: 62px;
+              top: 57px;
               bottom: 0;
               left: 0;
               width: 200px;
               background-color: #colors[dark-blue];
-              padding: 40px 20px;
+              padding: 20px 20px;
+              z-index: 1;
+              li{
+                &:first-child::before{
+                  content: '';
+                  border: solid #colors[brown];
+                  border-width: 0 3px 3px 0;
+                  display: inline-block;
+                  padding: 3px;
+                  transform: rotate(135deg);
+                  -webkit-transform: rotate(135deg);
+                  margin-right: 25px;
+                }
+                &:first-child::after {
+                  content: none;
+                }
+              }
               div {
                 color: #colors[white];
                 font-weight: bold;
@@ -123,9 +144,6 @@
                 }
               }
             }
-          }
-          .is-hidden{
-            display: none
           }
         }
       }
